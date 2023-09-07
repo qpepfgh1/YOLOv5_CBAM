@@ -1,0 +1,8 @@
+# trina
+$ python .\train.py --img 1280 --batch 12 --epochs 128 --data .\data\coco128.yaml --cfg .\models\yolov5s.yaml --weights .\weights\yolov5s.pt --name yolov5s_v1.0 --device 0
+
+# detect
+$ python .\detect.py --source coco128/images/train2017/ --weights .\runs\train\yolov5s_v1.021\weights\best.pt --conf 0.4 --name yolov5s_v1.021
+
+# predict
+$ python .\val.py --weights .\runs\train\yolov5s_v1.021\weights\best.pt --data .\data\coco128.yaml --img 1280 --augment --name yolo_test
