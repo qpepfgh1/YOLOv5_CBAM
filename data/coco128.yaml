@@ -1,0 +1,79 @@
+# YOLOv5 🚀 by Ultralytics, AGPL-3.0 license
+# COCO128 dataset https://www.kaggle.com/ultralytics/coco128 (first 128 images from COCO train2017) by Ultralytics
+# Example usage: python train.py --data coco128.yaml
+# parent
+# ├── yolov5
+# └── datasets
+#     └── coco128  ← downloads here (7 MB)
+
+
+# Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
+path: ./datasets/coco128  # dataset root dir
+train: images/train_v2  # train images (relative to 'path') 128 images
+val: images/train_N  # val images (relative to 'path') 128 images
+test: images/test # test images (optional)
+
+# Classes
+names:
+  0: M오염
+  1: MMS
+  2: 엣지기포
+  3: M찍힘
+  4: 표면기포
+  5: MS폭
+  6: F이물
+  7: M꺾임
+  8: M이물
+  9: 테프론
+  10: 진접
+  11: MS길이
+  12: PFS
+  13: 뜯김
+  14: PMS
+  15: P오염
+  16: 그리퍼
+  17: F찍힘
+  18: P찍힘
+  19: P꺾임
+  20: 결무늬
+  21: 날개처짐
+  22: 도금박리
+  23: MFS
+  24: 빨래판
+  25: MF뭉침
+  26: M음영
+  27: 필름농
+  28: 표면뭉침
+  29: 날개눌림
+  30: MMB
+  31: 기타
+  32: 날개기포
+  33: 산화
+  34: M갈변
+  35: 총두께
+  36: 실링
+  37: P이물
+  38: F꺾임
+  39: 콜론자국
+  40: 날개뭉침
+  41: 엣지뭉침
+  42: 필름겹침
+  43: 미진접
+  44: 미부착
+  45: 반미착
+  46: 치수
+  47: 날개이물컷팅
+  48: 표면눌림
+  49: 엣지눌림
+  50: 레이어
+  51: 백색테이프
+  52: 아지랑이
+  53: 돌기
+  54: 피딩
+  55: 들뜸
+  56: 날개주름
+  57: 역부착
+  58: 날개이물
+  59: 엣지이물
+  60: 3매부착
+  61: 1매부착
